@@ -7,7 +7,7 @@
 
 Complete implementation of **production-ready AI agents** using LangChain, with tool integration, persistent memory, error handling, monitoring, and Kubernetes deployment.
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - Build **multi-step reasoning agents** with LangChain
 - Implement **tool integration** (APIs, databases, search)
@@ -17,7 +17,7 @@ Complete implementation of **production-ready AI agents** using LangChain, with 
 - Handle **errors gracefully** with retry logic
 - Create **production-grade APIs** with FastAPI
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 User Request → FastAPI → Agent Executor → LLM + Tools → Response
@@ -30,14 +30,14 @@ User Request → FastAPI → Agent Executor → LLM + Tools → Response
 ```
 
 **Key Features:**
-- ✅ Stateless agent execution for horizontal scaling
-- ✅ Tool registry pattern for dynamic tool loading
-- ✅ Pluggable memory backends (Redis, PostgreSQL)
-- ✅ Async-first design for high throughput
-- ✅ Comprehensive error handling and retries
-- ✅ Production monitoring and tracing
+- Stateless agent execution for horizontal scaling
+- Tool registry pattern for dynamic tool loading
+- Pluggable memory backends (Redis, PostgreSQL)
+- Async-first design for high throughput
+- Comprehensive error handling and retries
+- Production monitoring and tracing
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Python 3.10+** with async programming knowledge
 - **Docker** and **Kubernetes** basics
@@ -45,7 +45,7 @@ User Request → FastAPI → Agent Executor → LLM + Tools → Response
 - **REST API** development experience
 - **OpenAI** or **Anthropic** API key
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Setup
 
@@ -100,7 +100,7 @@ curl -X POST http://localhost:8000/agent/execute \
   -d '{"query": "What is LangChain?", "conversation_id": "test-1"}'
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -150,7 +150,7 @@ curl -X POST http://localhost:8000/agent/execute \
 └── README.md           # This file
 ```
 
-## 🛠️ Core Components
+## Core Components
 
 ### Agent Executor
 
@@ -203,7 +203,7 @@ await memory.add_message("conv-123", "user", "Hello!")
 history = await memory.get_history("conv-123", limit=10)
 ```
 
-## 🐳 Docker Deployment
+## Docker Deployment
 
 ### Build and Run
 
@@ -221,7 +221,7 @@ docker-compose up
 - PostgreSQL (port 5432)
 - Prometheus (port 9090)
 
-## ☸️ Kubernetes Deployment
+## Kubernetes Deployment
 
 ### Deploy to Cluster
 
@@ -258,7 +258,7 @@ kubectl autoscale deployment ai-agent \
   -n ai-agents
 ```
 
-## 📊 Monitoring & Observability
+## Monitoring & Observability
 
 ### Metrics
 
@@ -294,7 +294,7 @@ export OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
 # Traces sent automatically
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -313,7 +313,7 @@ pytest --cov=src --cov-report=html
 - **End-to-end tests**: Full agent workflow
 - **Load tests**: Performance and scalability
 
-## 📚 API Documentation
+## API Documentation
 
 ### Execute Agent Request
 
@@ -348,7 +348,7 @@ Interactive API documentation available at:
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
 
-## 🔒 Security Considerations
+## Security Considerations
 
 - **API Keys**: Store in environment variables or secrets manager
 - **Input Validation**: All tool inputs validated before execution
@@ -356,7 +356,7 @@ Interactive API documentation available at:
 - **Tool Sandboxing**: Isolate tool execution environments
 - **Audit Logging**: Track all agent actions for compliance
 
-## 🎓 Advanced Topics
+## Advanced Topics
 
 ### Custom Tool Development
 
@@ -370,7 +370,7 @@ See `docs/MULTI_AGENT.md` for agent coordination patterns.
 
 See `docs/STREAMING.md` for implementing SSE responses.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -389,20 +389,20 @@ See `docs/STREAMING.md` for implementing SSE responses.
 - Run tools in parallel where possible
 - Scale horizontally with Kubernetes
 
-## 📖 Related Tutorials
+## Related Tutorials
 
 - [LLM Guardrails Tutorial](https://crashbytes.com/tutorial-production-llm-guardrails-python-fastapi-2025)
 - [MLOps Pipeline Tutorial](https://crashbytes.com/tutorial-mlops-pipeline-kubernetes-production-deployment-2025)
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-## 💬 Support
+## Support
 
 - **Tutorial**: [Full walkthrough on crashbytes.com](https://crashbytes.com/articles/tutorial-ai-agents-langchain-production-kubernetes-deployment-2025)
 - **Issues**: [GitHub Issues](https://github.com/crashbytes/crashbytes-tutorial-ai-agents-langchain-production/issues)
@@ -410,6 +410,6 @@ Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-**Built with** ❤️ **by** [Crashbytes](https://crashbytes.com)
+**Built by** [Crashbytes](https://crashbytes.com)
 
-⭐ **Star this repo** if you found it helpful!
+**Star this repo** if you found it helpful!
