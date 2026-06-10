@@ -36,9 +36,9 @@ def mock_settings():
 def mock_tool():
     """Mock tool for testing"""
     class MockTool(BaseTool):
-        name = "mock_tool"
-        description = "A mock tool for testing"
-        
+        name: str = "mock_tool"
+        description: str = "A mock tool for testing"
+
         async def _execute(self, **kwargs):
             return {"success": True, "result": "mock result"}
     
@@ -98,8 +98,8 @@ class TestBaseTool:
     async def test_tool_validation(self):
         """Test tool input validation"""
         class ValidatedTool(BaseTool):
-            name = "validated_tool"
-            description = "Tool with validation"
+            name: str = "validated_tool"
+            description: str = "Tool with validation"
             
             def validate_input(self, value: int = None, **kwargs):
                 return value is not None and value > 0
