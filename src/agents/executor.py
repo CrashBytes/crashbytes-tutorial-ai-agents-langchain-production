@@ -6,11 +6,11 @@ Orchestrates LLM calls with tools and memory for multi-step reasoning.
 
 from typing import List, Dict, Any, Optional
 import logging
-from langchain.agents import AgentExecutor as LangChainAgentExecutor, create_openai_functions_agent
+from langchain_classic.agents import AgentExecutor as LangChainAgentExecutor, create_openai_functions_agent
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.schema import HumanMessage, AIMessage, SystemMessage
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
 from ..tools.base_tool import BaseTool
 from ..memory.redis_memory import RedisConversationMemory

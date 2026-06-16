@@ -225,7 +225,7 @@ class BaseTool(BaseModel):
         
         This allows the tool to be used with LangChain agents.
         """
-        from langchain.tools import Tool
+        from langchain_classic.tools import Tool
         
         async def run_tool(**kwargs):
             return await self.execute(**kwargs)
