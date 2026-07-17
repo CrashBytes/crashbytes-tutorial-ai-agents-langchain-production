@@ -48,3 +48,6 @@ pre-commit==4.6.0
 tenacity==9.1.4
 pyyaml==6.0.3
 click==8.4.2
+
+# Security: pin vulnerable transitive dependency to fixed version
+aiohttp>=3.13.4  # CVE-2026-34520
