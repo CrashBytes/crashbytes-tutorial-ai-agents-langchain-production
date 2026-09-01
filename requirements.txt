@@ -3,15 +3,15 @@
 # and PYSEC-2026-77 (langchain-text-splitters SSRF). Classic agent APIs
 # (AgentExecutor, create_openai_functions_agent) now imported from langchain-classic.
 # langchain-community has no 1.x release; 0.4.x is compatible with langchain-core 1.x.
-langchain==1.3.15
-langchain-openai==1.5.1
-langchain-anthropic==1.5.6
+langchain==1.3.18
+langchain-openai==1.6.0
+langchain-anthropic==1.7.0
 langchain-community==0.4.2
 langchain-classic==1.0.8
 fastapi==0.141.1
-uvicorn[standard]==0.52.3
+uvicorn[standard]==0.52.4
 # pydantic kept on 2.x (langchain 0.3.x requires pydantic <3). Updated to latest 2.x.
-pydantic==2.13.4
+pydantic==2.13.5
 pydantic-settings==2.15.0
 
 # Agent Dependencies
@@ -19,7 +19,7 @@ redis==8.1.0
 asyncpg==0.31.0
 httpx==0.28.1
 beautifulsoup4==4.15.0
-python-dotenv==1.2.2
+python-dotenv==1.2.3
 
 # Database
 sqlalchemy==2.0.52
@@ -40,14 +40,14 @@ pytest-cov==7.1.0
 
 # Development
 black==26.5.1
-ruff==0.16.3
+ruff==0.16.5
 mypy==2.3.1
 pre-commit==4.6.2
 
 # Utilities
 tenacity==9.1.4
 pyyaml==6.0.3
-click==8.4.2
+click==8.5.0
 
 # Security: pin vulnerable transitive dependency to fixed version
 aiohttp>=3.13.4  # CVE-2026-34520
